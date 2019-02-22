@@ -29,6 +29,7 @@ This application supports news resources like:
 - the verge
 - the wall street journal
 - time.
+
 News displayed all day.It is possible to go to the detailed description of the news, or to the website of the news feed that published the news.
 
 
