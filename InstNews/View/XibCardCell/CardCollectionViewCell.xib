@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardCollectionViewCell" customModule="InstNews" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardID" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="InstNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="836"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="540" height="836"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VhI-M4-3fh">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="836"/>
+                    </imageView>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGJ-ye-YPd">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="836"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acw-Dh-StI">
+                        <rect key="frame" x="16" y="792" width="508" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdr-h0-zlw">
+                        <rect key="frame" x="235" y="393" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="AEA-iT-pMy"/>
+                            <constraint firstAttribute="width" constant="70" id="JhY-p1-opl"/>
+                        </constraints>
+                        <state key="normal" image="LogoTC"/>
+                        <connections>
+                            <action selector="tapMoreInformationButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="paF-Qh-eVt"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pdr-h0-zlw" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="3bo-Tb-Udo"/>
+                <constraint firstAttribute="bottom" secondItem="VhI-M4-3fh" secondAttribute="bottom" id="4hd-4b-xA6"/>
+                <constraint firstAttribute="trailing" secondItem="JGJ-ye-YPd" secondAttribute="trailing" id="986-jX-krt"/>
+                <constraint firstItem="VhI-M4-3fh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NAa-Up-av7"/>
+                <constraint firstItem="JGJ-ye-YPd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dBO-Ei-1GW"/>
+                <constraint firstItem="VhI-M4-3fh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eWP-ng-nqz"/>
+                <constraint firstAttribute="trailing" secondItem="VhI-M4-3fh" secondAttribute="trailing" id="gbk-IX-uYQ"/>
+                <constraint firstItem="acw-Dh-StI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="hTk-EG-0qR"/>
+                <constraint firstAttribute="bottom" secondItem="acw-Dh-StI" secondAttribute="bottom" constant="20" id="puu-B1-vRD"/>
+                <constraint firstAttribute="trailing" secondItem="acw-Dh-StI" secondAttribute="trailing" constant="16" id="uiB-FB-T0J"/>
+                <constraint firstAttribute="bottom" secondItem="JGJ-ye-YPd" secondAttribute="bottom" id="wR8-x3-nOI"/>
+                <constraint firstItem="pdr-h0-zlw" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="xrk-ul-lZa"/>
+                <constraint firstItem="JGJ-ye-YPd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zsM-MJ-Xxp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="540" height="836"/>
+            <connections>
+                <outlet property="darkView" destination="JGJ-ye-YPd" id="I2F-gN-vB2"/>
+                <outlet property="imageArticle" destination="VhI-M4-3fh" id="Ius-Xl-622"/>
+                <outlet property="moreInformationOutlet" destination="pdr-h0-zlw" id="M7C-lA-dPu"/>
+                <outlet property="titleArticle" destination="acw-Dh-StI" id="btb-an-hYK"/>
+            </connections>
+            <point key="canvasLocation" x="1536" y="355"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="LogoTC" width="39.5" height="20"/>
+    </resources>
+</document>
