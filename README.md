@@ -7,7 +7,7 @@ This is a news application.
 
 ### Features
 
-- This application supports news resources like:
+This application supports news resources like:
 - bbc news
 - business insider
 - bloomberg
